@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  # 配置mysql数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123456
+  data:
+    # 配置mongodb数据库
+    mongodb:
+      uri: mongodb://localhost:27017/test
+  # 配置redis数据库
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    pool:
+      max-active: 100
+      max-idle: 10
+      max-wait: 100000
+      timeout: 0
+  # 配置视图
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    encoding: utf-8
+    mode: HTML5
+# 配置消息队列：rabbitmq
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  publisher-confirms: true
+  virtual-host: /
