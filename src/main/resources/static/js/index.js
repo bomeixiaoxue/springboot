@@ -48,7 +48,7 @@ function rendererTable(dataArr) {
                 , {field: 'id', title: 'ID', sort: true}
                 , {field: 'name', title: '用户名'}
                 , {field: 'age', title: '年龄'}
-                , {title: '操作', toolbar: '#barDemo', width: 200}
+                , {field: 'operation', title: '操作', toolbar: '#barDemo', width: 200}
             ]]
             , data: dataArr
             // ,skin: 'line' //表格风格
