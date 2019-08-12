@@ -12,15 +12,15 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/test
   # 配置redis数据库
-  redis:
-    database: 0
-    host: localhost
-    port: 6379
-    pool:
-      max-active: 100
-      max-idle: 10
-      max-wait: 100000
-      timeout: 0
+#  redis:
+#    database: 0
+#    host: localhost
+#    port: 6379
+#    pool:
+#      max-active: 100
+#      max-idle: 10
+#      max-wait: 100000
+#      timeout: 0
   # 配置视图
   thymeleaf:
     prefix: classpath:/templates/
